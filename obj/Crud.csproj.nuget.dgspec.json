@@ -1,0 +1,79 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/ugurm/RiderProjects/WebApplication/Crud/Crud.csproj": {}
+  },
+  "projects": {
+    "/home/ugurm/RiderProjects/WebApplication/Crud/Crud.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/ugurm/RiderProjects/WebApplication/Crud/Crud.csproj",
+        "projectName": "Crud",
+        "projectPath": "/home/ugurm/RiderProjects/WebApplication/Crud/Crud.csproj",
+        "packagesPath": "/home/ugurm/.nuget/packages/",
+        "outputPath": "/home/ugurm/RiderProjects/WebApplication/Crud/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/ugurm/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Rocket.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.0.26, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
