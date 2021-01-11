@@ -1,9 +1,10 @@
 namespace Crud.Models
 {
-    public class Blog
+    public partial class Blog
     {
         public int id { get; set; }
-        public string blogtext { get; set; }
+        public string email { get; set; }
+        public string blogText { get; set; }
         public string  category {get; set;}
         public string  title {get; set;}
     }

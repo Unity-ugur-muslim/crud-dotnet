@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/ugurm/RiderProjects/WebApplication/Crud/Crud.csproj": {}
+    "/var/www/bynogame/crud-dotnet/Crud.csproj": {}
   },
   "projects": {
-    "/home/ugurm/RiderProjects/WebApplication/Crud/Crud.csproj": {
+    "/var/www/bynogame/crud-dotnet/Crud.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ugurm/RiderProjects/WebApplication/Crud/Crud.csproj",
+        "projectUniqueName": "/var/www/bynogame/crud-dotnet/Crud.csproj",
         "projectName": "Crud",
-        "projectPath": "/home/ugurm/RiderProjects/WebApplication/Crud/Crud.csproj",
-        "packagesPath": "/home/ugurm/.nuget/packages/",
-        "outputPath": "/home/ugurm/RiderProjects/WebApplication/Crud/obj/",
+        "projectPath": "/var/www/bynogame/crud-dotnet/Crud.csproj",
+        "packagesPath": "/home/ugur/.nuget/packages/",
+        "outputPath": "/var/www/bynogame/crud-dotnet/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/ugurm/.nuget/NuGet/NuGet.Config"
+          "/home/ugur/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -47,6 +47,18 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.1, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[5.0.0-alpha.2, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql.Design": {
+              "target": "Package",
+              "version": "[1.1.2, )"
             },
             "Rocket.EntityFrameworkCore.InMemory": {
               "target": "Package",
