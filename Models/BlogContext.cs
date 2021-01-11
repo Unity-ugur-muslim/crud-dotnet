@@ -39,6 +39,12 @@ namespace Crud.Models
                     .IsRequired()
                     .HasMaxLength(50)
                     .IsUnicode(false);
+                
+                entity.Property(e => e.createdAt)
+                    .HasColumnType("datetime");
+                
+                entity.Property(e => e.updatedAt)
+                    .HasColumnType("datetime");
 
             });
 

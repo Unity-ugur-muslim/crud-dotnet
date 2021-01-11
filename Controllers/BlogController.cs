@@ -20,9 +20,8 @@ namespace Crud.Controllers
         // GET: Products
         public async Task<IActionResult> Index()
         {
-            var a = await _context.Blog.ToListAsync();
-            Debug.WriteLine(a);
-            return View(a);
+            var list = await _context.Blog.ToListAsync();
+            return View(list);
         }
 
         // GET: Products/Details/5
