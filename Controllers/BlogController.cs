@@ -85,7 +85,7 @@ namespace Crud.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProductId,Name,Category,Color,UnitPrice,AvailableQuantity")] Blog blog)
+        public async Task<IActionResult> Edit(int id, [Bind("id,email,name,category,title,blogText")] Blog blog)
         {
             if (id != blog.id)
             {
@@ -115,28 +115,10 @@ namespace Crud.Controllers
             return View(blog);
         }
 
-        // GET: Products/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var blog = await _context.Blog
-                .FirstOrDefaultAsync(m => m.id == id);
-            if (blog == null)
-            {
-                return NotFound();
-            }
-
-            return View(blog);
-        }
-
         // POST: Products/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             var blog = await _context.Blog.FindAsync(id);
             _context.Blog.Remove(blog);

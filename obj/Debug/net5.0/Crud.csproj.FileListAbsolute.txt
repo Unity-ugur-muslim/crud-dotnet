@@ -73,7 +73,6 @@
 /home/ugurm/RiderProjects/WebApplication/Crud/obj/Debug/net5.0/Crud.RazorTargetAssemblyInfo.cs
 /home/ugurm/RiderProjects/WebApplication/Crud/obj/Debug/net5.0/Crud.Views.pdb
 /home/ugurm/RiderProjects/WebApplication/Crud/obj/Debug/net5.0/Razor/Views/Blog/Index.cshtml.g.cs
-/home/ugurm/RiderProjects/WebApplication/Crud/obj/Debug/net5.0/Razor/Views/Home/Index.cshtml.g.cs
 /home/ugurm/RiderProjects/WebApplication/Crud/obj/Debug/net5.0/Razor/Views/Shared/_Layout.cshtml.g.cs
 /home/ugurm/RiderProjects/WebApplication/Crud/obj/Debug/net5.0/Razor/Views/Blog/create.cshtml.g.cs
 /var/www/bynogame/crud-dotnet/bin/Debug/net5.0/appsettings.Development.json
@@ -187,3 +186,4 @@
 /home/ugurm/RiderProjects/WebApplication/Crud/bin/Debug/net5.0/System.Xml.XPath.XmlDocument.dll
 /home/ugurm/RiderProjects/WebApplication/Crud/obj/Debug/net5.0/Razor/Views/_ViewImports.cshtml.g.cs
 /home/ugurm/RiderProjects/WebApplication/Crud/obj/Debug/net5.0/Razor/Views/Blog/Edit.cshtml.g.cs
+/home/ugurm/RiderProjects/WebApplication/Crud/obj/Debug/net5.0/Razor/Views/Blog/Details.cshtml.g.cs

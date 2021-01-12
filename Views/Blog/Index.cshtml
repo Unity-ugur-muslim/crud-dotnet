@@ -6,7 +6,7 @@
 }
 
 <div class="container">
-    <div class="col-md-8 offset-md-2">
+    <div class="col-md-10 offset-md-1">
         <h2 class="text-center">Blog Index</h2>
         <div class="table-responsive">
             <table class="table">
@@ -44,9 +44,18 @@
                             @Html.DisplayFor(modelItem => item.blogText)
                         </td>
                         <td>
-                            <a asp-action="Edit" asp-route-id="@item.id"><button class="btn btn-success btn-sm">Edit</button></a> 
-                            <a asp-action="Details" asp-route-id="@item.id"><button class="btn- btn-primary btn-sm">Details</button></a> 
-                            <a asp-action="Delete" asp-route-id="@item.id"><button class="btn- btn-danger btn-sm">Delete</button></a>
+                            <a asp-action="Edit" asp-route-id="@item.id">
+                                <button class="btn btn-success btn-sm">Edit</button>
+                            </a>
+                            <a asp-action="Details" asp-route-id="@item.id">
+                                <button class="btn- btn-primary btn-sm">Details</button>
+                            </a>
+                            <form asp-action="Delete">
+                                <input type="hidden" asp-for="@item.id"/>
+                                <button class="btn- btn-danger btn-sm">
+                                    Delete
+                                </button>
+                            </form>
                         </td>
                     </tr>
                 }
