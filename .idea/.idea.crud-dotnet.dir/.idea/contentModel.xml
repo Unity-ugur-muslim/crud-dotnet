@@ -12,31 +12,37 @@
         <e p="HomeController.cs" t="Include" />
       </e>
       <e p="Crud.csproj" t="IncludeRecursive" />
+      <e p="Interfaces" t="Include">
+        <e p="ICacheMemory.cs" t="Include" />
+      </e>
       <e p="Migrations" t="Include">
-        <e p="20210111220819_BlogMigrate.Designer.cs" t="Include" />
-        <e p="20210111220819_BlogMigrate.cs" t="Include" />
+        <e p="20210112103915_BlogCreate.Designer.cs" t="Include" />
+        <e p="20210112103915_BlogCreate.cs" t="Include" />
         <e p="BlogContextModelSnapshot.cs" t="Include" />
       </e>
       <e p="Models" t="Include">
         <e p="Blog.cs" t="Include" />
         <e p="BlogContext.cs" t="Include" />
       </e>
-      <e p="MySqlDatabase.cs" t="Include" />
       <e p="Program.cs" t="Include" />
       <e p="Properties" t="Include">
         <e p="launchSettings.json" t="Include" />
       </e>
+      <e p="Services" t="Include">
+        <e p="CacheKeys.cs" t="Include" />
+        <e p="CacheMemory.cs" t="Include" />
+      </e>
       <e p="Startup.cs" t="Include" />
       <e p="Views" t="Include">
         <e p="Blog" t="Include">
-          <e p="Index.cshtml" t="Include" />
-          <e p="create.cshtml" t="Include" />
-        </e>
-        <e p="Home" t="Include">
+          <e p="Create.cshtml" t="Include" />
+          <e p="Details.cshtml" t="Include" />
+          <e p="Edit.cshtml" t="Include" />
           <e p="Index.cshtml" t="Include" />
         </e>
         <e p="Shared" t="Include">
           <e p="_Layout.cshtml" t="Include" />
+          <e p="_ValidationScriptsPartial.cshtml" t="Include" />
         </e>
         <e p="_ViewImports.cshtml" t="Include" />
       </e>
@@ -52,6 +58,32 @@
         </e>
       </e>
       <e p="packages" t="ExcludeRecursive" />
+      <e p="wwwroot" t="Include">
+        <e p="lib" t="Include">
+          <e p="jquery" t="Include">
+            <e p="LICENSE.txt" t="Include" />
+            <e p="dist" t="Include">
+              <e p="jquery.js" t="Include" />
+              <e p="jquery.min.js" t="Include" />
+              <e p="jquery.min.map" t="Include" />
+            </e>
+          </e>
+          <e p="jquery-validation" t="Include">
+            <e p="LICENSE.md" t="Include" />
+            <e p="dist" t="Include">
+              <e p="additional-methods.js" t="Include" />
+              <e p="additional-methods.min.js" t="Include" />
+              <e p="jquery.validate.js" t="Include" />
+              <e p="jquery.validate.min.js" t="Include" />
+            </e>
+          </e>
+          <e p="jquery-validation-unobtrusive" t="Include">
+            <e p="LICENSE.txt" t="Include" />
+            <e p="jquery.validate.unobtrusive.js" t="Include" />
+            <e p="jquery.validate.unobtrusive.min.js" t="Include" />
+          </e>
+        </e>
+      </e>
     </e>
   </component>
 </project>

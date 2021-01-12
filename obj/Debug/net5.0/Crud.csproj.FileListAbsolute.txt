@@ -143,7 +143,6 @@
 /var/www/bynogame/crud-dotnet/obj/Debug/net5.0/Crud.RazorCoreGenerate.cache
 /var/www/bynogame/crud-dotnet/obj/Debug/net5.0/Razor/Views/Blog/create.cshtml.g.cs
 /var/www/bynogame/crud-dotnet/obj/Debug/net5.0/Razor/Views/Blog/Index.cshtml.g.cs
-/var/www/bynogame/crud-dotnet/obj/Debug/net5.0/Razor/Views/Home/Index.cshtml.g.cs
 /var/www/bynogame/crud-dotnet/obj/Debug/net5.0/Razor/Views/Shared/_Layout.cshtml.g.cs
 /var/www/bynogame/crud-dotnet/obj/Debug/net5.0/Crud.RazorTargetAssemblyInfo.cache
 /var/www/bynogame/crud-dotnet/obj/Debug/net5.0/Crud.RazorTargetAssemblyInfo.cs
@@ -188,3 +187,6 @@
 /home/ugurm/RiderProjects/WebApplication/Crud/obj/Debug/net5.0/Razor/Views/Blog/Edit.cshtml.g.cs
 /home/ugurm/RiderProjects/WebApplication/Crud/obj/Debug/net5.0/Razor/Views/Blog/Details.cshtml.g.cs
 /home/ugurm/RiderProjects/WebApplication/Crud/obj/Debug/net5.0/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+/var/www/bynogame/crud-dotnet/obj/Debug/net5.0/Razor/Views/Blog/Details.cshtml.g.cs
+/var/www/bynogame/crud-dotnet/obj/Debug/net5.0/Razor/Views/Blog/Edit.cshtml.g.cs
+/var/www/bynogame/crud-dotnet/obj/Debug/net5.0/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs

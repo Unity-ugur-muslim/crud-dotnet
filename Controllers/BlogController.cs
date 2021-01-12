@@ -3,7 +3,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Xml;
+using Crud.Interfaces;
 using Crud.Models;
+using Crud.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,16 +14,20 @@ namespace Crud.Controllers
    public class BlogController : Controller
     {
         private readonly BlogContext _context;
+        private readonly ICacheMemory _cache;
 
-        public BlogController(BlogContext context)
+        public BlogController(BlogContext context, ICacheMemory cache)
         {
             _context = context;
+            _cache = cache;
         }
 
         // GET: Blog
         public async Task<IActionResult> Index()
         {
             var list = await _context.Blog.ToListAsync();
+            _cache.Cache(list);
+            _cache.CacheGet();
             return View(list);
         }
 
