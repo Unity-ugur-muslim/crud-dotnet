@@ -100,6 +100,8 @@ namespace Crud.Controllers
             {
                 try
                 {
+                    DateTime now = DateTime.Now;
+                    blog.updatedAt = now;
                     _context.Update(blog);
                     await _context.SaveChangesAsync();
                 }
