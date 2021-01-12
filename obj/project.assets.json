@@ -8297,19 +8297,19 @@
     ]
   },
   "packageFolders": {
-    "/home/ugur/.nuget/packages/": {}
+    "/home/ugurm/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/var/www/bynogame/crud-dotnet/Crud.csproj",
+      "projectUniqueName": "/home/ugurm/RiderProjects/WebApplication/Crud/Crud.csproj",
       "projectName": "Crud",
-      "projectPath": "/var/www/bynogame/crud-dotnet/Crud.csproj",
-      "packagesPath": "/home/ugur/.nuget/packages/",
-      "outputPath": "/var/www/bynogame/crud-dotnet/obj/",
+      "projectPath": "/home/ugurm/RiderProjects/WebApplication/Crud/Crud.csproj",
+      "packagesPath": "/home/ugurm/.nuget/packages/",
+      "outputPath": "/home/ugurm/RiderProjects/WebApplication/Crud/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/ugur/.nuget/NuGet/NuGet.Config"
+        "/home/ugurm/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"

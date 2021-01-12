@@ -13,18 +13,18 @@
                 <thead>
                 <tr>
                     <th>
-                        @Html.DisplayNameFor(model => model.email)
+                        Email
                     </th>
                     <th>
-                        @Html.DisplayNameFor(model => model.category)
+                        Category
                     </th>
                     <th>
-                        @Html.DisplayNameFor(model => model.title)
+                        Title
                     </th>
                     <th>
-                        @Html.DisplayNameFor(model => model.blogText)
+                        Blog Text
                     </th>
-                    <th></th>
+                    <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -44,9 +44,9 @@
                             @Html.DisplayFor(modelItem => item.blogText)
                         </td>
                         <td>
-                            <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
-                            <a asp-action="Details" asp-route-id="@item.id">Details</a> |
-                            <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+                            <a asp-action="Edit" asp-route-id="@item.id"><button class="btn btn-success btn-sm">Edit</button></a> 
+                            <a asp-action="Details" asp-route-id="@item.id"><button class="btn- btn-primary btn-sm">Details</button></a> 
+                            <a asp-action="Delete" asp-route-id="@item.id"><button class="btn- btn-danger btn-sm">Delete</button></a>
                         </td>
                     </tr>
                 }

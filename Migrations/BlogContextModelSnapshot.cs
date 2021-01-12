@@ -21,14 +21,14 @@ namespace Crud.Migrations
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
-                        .HasMaxLength(30)
+                        .HasMaxLength(10)
                         .IsUnicode(false)
                         .HasColumnType("int");
 
                     b.Property<string>("blogText")
-                        .HasMaxLength(15)
+                        .IsRequired()
                         .IsUnicode(false)
-                        .HasColumnType("varchar(15)");
+                        .HasColumnType("longtext");
 
                     b.Property<string>("category")
                         .IsRequired()
@@ -37,20 +37,22 @@ namespace Crud.Migrations
                         .HasColumnType("varchar(50)");
 
                     b.Property<DateTime>("createdAt")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("datetime");
 
                     b.Property<string>("email")
-                        .HasMaxLength(30)
+                        .IsRequired()
+                        .HasMaxLength(40)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(30)");
+                        .HasColumnType("varchar(40)");
 
                     b.Property<string>("title")
-                        .HasMaxLength(30)
+                        .IsRequired()
+                        .HasMaxLength(40)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(30)");
+                        .HasColumnType("varchar(40)");
 
                     b.Property<DateTime>("updatedAt")
-                        .HasColumnType("datetime(6)");
+                        .HasColumnType("datetime");
 
                     b.HasKey("id");
 

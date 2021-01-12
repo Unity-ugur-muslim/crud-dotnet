@@ -1,3 +1,4 @@
+using System;
 using Microsoft.EntityFrameworkCore;
 
 namespace Crud.Models
@@ -20,32 +21,35 @@ namespace Crud.Models
             modelBuilder.Entity<Blog>(entity =>
             {
                 entity.Property(e => e.id)
-                    .HasMaxLength(30)
+                    .HasMaxLength(10)
                     .IsUnicode(false);
                 
                 entity.Property(e => e.email)
-                    .HasMaxLength(30)
+                    .IsRequired()
+                    .HasMaxLength(40)
                     .IsUnicode(false);
 
                 entity.Property(e => e.title)
-                    .HasMaxLength(30)
+                    .IsRequired()
+                    .HasMaxLength(40)
                     .IsUnicode(false);
 
                 entity.Property(e => e.blogText)
-                    .HasMaxLength(15)
+                    .IsRequired()
+                    .HasColumnType("longtext")
                     .IsUnicode(false);
 
                 entity.Property(e => e.category)
                     .IsRequired()
                     .HasMaxLength(50)
                     .IsUnicode(false);
-                
+
                 entity.Property(e => e.createdAt)
-                    .HasColumnType("datetime");
-                
-                entity.Property(e => e.updatedAt)
+                    .IsRequired()
                     .HasColumnType("datetime");
 
+                entity.Property(e => e.updatedAt)
+                    .HasColumnType("datetime");
             });
 
             OnModelCreatingPartial(modelBuilder);
