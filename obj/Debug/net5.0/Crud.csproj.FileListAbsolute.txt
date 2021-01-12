@@ -187,3 +187,4 @@
 /home/ugurm/RiderProjects/WebApplication/Crud/obj/Debug/net5.0/Razor/Views/_ViewImports.cshtml.g.cs
 /home/ugurm/RiderProjects/WebApplication/Crud/obj/Debug/net5.0/Razor/Views/Blog/Edit.cshtml.g.cs
 /home/ugurm/RiderProjects/WebApplication/Crud/obj/Debug/net5.0/Razor/Views/Blog/Details.cshtml.g.cs
+/home/ugurm/RiderProjects/WebApplication/Crud/obj/Debug/net5.0/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs

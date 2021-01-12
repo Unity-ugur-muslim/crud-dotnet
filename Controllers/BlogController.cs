@@ -1,3 +1,4 @@
+using System;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,14 +18,14 @@ namespace Crud.Controllers
             _context = context;
         }
 
-        // GET: Products
+        // GET: Blog
         public async Task<IActionResult> Index()
         {
             var list = await _context.Blog.ToListAsync();
             return View(list);
         }
 
-        // GET: Products/Details/5
+        // GET: Blog/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -42,21 +43,24 @@ namespace Crud.Controllers
             return View(blogs);
         }
 
-        // GET: Products/Create
+        // GET: Blog/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Products/Create
+        // POST: Blog/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProductId,Name,Category,Color,UnitPrice,AvailableQuantity")] Blog blog)
+        public async Task<IActionResult> Create([Bind("title,category,blogText,email")] Blog blog)
         {
             if (ModelState.IsValid)
             {
+                DateTime now = DateTime.Now;
+                blog.createdAt = now; 
+                blog.updatedAt = now;
                 _context.Add(blog);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -64,7 +68,7 @@ namespace Crud.Controllers
             return View(blog);
         }
 
-        // GET: Products/Edit/5
+        // GET: Blog/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -80,7 +84,7 @@ namespace Crud.Controllers
             return View(blog);
         }
 
-        // POST: Products/Edit/5
+        // POST: Blog/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -115,7 +119,7 @@ namespace Crud.Controllers
             return View(blog);
         }
 
-        // POST: Products/Delete/5
+        // POST: Blog/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int id)
@@ -130,5 +134,17 @@ namespace Crud.Controllers
         {
             return _context.Blog.Any(e => e.id == id);
         }
+
+        private string ShortenText(string text)
+        {
+            if (text.Length > 20)
+            {
+                text = text.Substring(0, 20);
+                text += "....";
+            }
+
+            return text;
+        }
+
     }
 }

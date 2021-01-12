@@ -17,9 +17,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <_ContentIncludedByDefault Remove="Pages\Products\Create.cshtml" />
-      <_ContentIncludedByDefault Remove="Pages\Products\Details.cshtml" />
-      <_ContentIncludedByDefault Remove="Pages\Products\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Blog\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Blog\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Pages\Blog\Index.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Home\Index.cshtml" />
     </ItemGroup>
 

@@ -1,7 +1,7 @@
 @model Crud.Models.Blog
 
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "Post Blog";
     Layout = "_Layout";
 }
 
@@ -36,3 +36,7 @@
         </form>
     </div>
 </div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
