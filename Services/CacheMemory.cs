@@ -39,11 +39,9 @@ namespace Crud.Services
             }                 
         }
 
-        public void  CacheGet()
+        public List<Blog> CacheGet()
         {
-            
-            var cacheEntry = _cache.Get<List<Blog>>(CacheKeys.Entry);
-            return;
+            return _cache.Get<List<Blog>>(CacheKeys.Entry);
         }
     }
 }

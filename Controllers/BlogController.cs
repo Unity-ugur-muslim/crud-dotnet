@@ -25,9 +25,12 @@ namespace Crud.Controllers
         // GET: Blog
         public async Task<IActionResult> Index()
         {
-            var list = await _context.Blog.ToListAsync();
-            _cache.Cache(list);
-            _cache.CacheGet();
+            var list = _cache.CacheGet();
+            if (list == null)
+            {
+                list = await _context.Blog.ToListAsync();
+                _cache.Cache(list);
+            }
             return View(list);
         }
 

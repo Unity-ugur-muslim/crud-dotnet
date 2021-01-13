@@ -6,6 +6,6 @@ namespace Crud.Interfaces
     public interface ICacheMemory
     {
         void Cache(List<Blog> data);
-        void CacheGet();
+        List<Blog> CacheGet();
     }
 }

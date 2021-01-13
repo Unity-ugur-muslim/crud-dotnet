@@ -7,9 +7,13 @@
     <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p=".gitignore" t="Include" />
+      <e p="Classes" t="Include">
+        <e p="Cache" t="Include">
+          <e p="CacheMemoryHelper.cs" t="Include" />
+        </e>
+      </e>
       <e p="Controllers" t="Include">
         <e p="BlogController.cs" t="Include" />
-        <e p="HomeController.cs" t="Include" />
       </e>
       <e p="Crud.csproj" t="IncludeRecursive" />
       <e p="Interfaces" t="Include">
